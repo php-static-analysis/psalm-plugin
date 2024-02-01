@@ -1,56 +1,68 @@
 {
-    "name": "weirdan/psalm-plugin-skeleton",
-    "description": "Template to create psalm-plugin projects from",
+    "name": "php-static-analysis/psalm-plugin",
+    "description": "Psalm plugin to read static analysis attributes",
     "type": "psalm-plugin",
+    "keywords": ["dev", "static analysis"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Bruce Weirdan",
-            "email": "weirdan@gmail.com"
-        }
-    ],
-    "require": {
-        "vimeo/psalm": "dev-master"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5.5",
-        "squizlabs/php_codesniffer": "^3.3",
-        "psalm/plugin-phpunit": "^0.16.0",
-        "weirdan/prophecy-shim": "^2.0",
-        "weirdan/codeception-psalm-module": "^0.13.1",
-        "codeception/codeception": "^4.1"
-    },
-    "extra": {
-        "psalm": {
-            "pluginClass": "Weirdan\\PsalmPluginSkeleton\\Plugin"
-        }
-    },
     "autoload": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\": [
-                "."
-            ]
+            "PhpStaticAnalysis\\PsalmPlugin\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\Tests\\": [
-                "tests/_support",
-                "tests"
-            ]
+            "test\\PhpStaticAnalysis\\PsalmPlugin\\": "tests/",
+            "Psalm\\Tests\\": "vendor/vimeo/psalm/tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Granados",
+            "email": "carlos@fastdebug.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "ext-simplexml": "*",
+        "php-static-analysis/attributes": "^0.1 || dev-main",
+        "php-static-analysis/node-visitor": "^0.1 || dev-main",
+        "vimeo/psalm": "^5"
+    },
+    "require-dev": {
+        "php-static-analysis/phpstan-extension": "dev-main",
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.0",
+        "symplify/easy-coding-standard": "^12.1"
+    },
+    "config": {
+        "preferred-install": {
+            "vimeo/psalm": "source"
+        },
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "psalm": {
+            "pluginClass": "PhpStaticAnalysis\\PsalmPlugin\\Plugin"
         }
     },
     "scripts": {
-        "check": [
-            "@analyze",
-            "@cs-check",
-            "@unit-tests",
-            "@acceptance-tests"
+        "tests": [
+            "@ecs",
+            "@psalm",
+            "@phpunit",
+            "@phpstan"
         ],
-        "analyze": "codecept build && psalm",
-        "cs-check": "phpcs",
-        "cs-fix": "phpcbf",
-        "unit-tests": "phpunit --colors=always",
-        "acceptance-tests": "codecept build && codecept --ansi run acceptance"
+        "psalm": "psalm",
+        "psalm-debug": "PSALM_ALLOW_XDEBUG=1 psalm --no-cache",
+        "ecs": "ecs",
+        "ecs-fix": "ecs --fix",
+        "phpunit": "phpunit",
+        "phpstan": "phpstan analyse"
     }
 }
