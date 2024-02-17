@@ -1,6 +1,6 @@
 <?php
 
-namespace test\PhpStaticAnalysis\PsalmPlugin\data;
+namespace test\PhpStaticAnalysis\PsalmPlugin\data\Template;
 
 use Exception;
 use PhpStaticAnalysis\Attributes\Param;

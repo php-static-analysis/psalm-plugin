@@ -1,6 +1,6 @@
 <?php
 
-namespace test\PhpStaticAnalysis\PsalmPlugin\data;
+namespace test\PhpStaticAnalysis\PsalmPlugin\data\Param;
 
 use PhpStaticAnalysis\Attributes\Param;
 

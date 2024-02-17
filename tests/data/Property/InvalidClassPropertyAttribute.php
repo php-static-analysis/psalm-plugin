@@ -1,6 +1,6 @@
 <?php
 
-namespace test\PhpStaticAnalysis\PsalmPlugin\data;
+namespace test\PhpStaticAnalysis\PsalmPlugin\data\Property;
 
 use PhpStaticAnalysis\Attributes\Property;
 
@@ -8,7 +8,7 @@ use PhpStaticAnalysis\Attributes\Property;
 class InvalidClassPropertyAttribute
 {
     #[Property('string')]
-    public function getNane(): string
+    public function getName(): string
     {
         return "John";
     }

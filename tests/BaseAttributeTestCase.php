@@ -25,6 +25,9 @@ class BaseAttributeTestCase extends TestCase
         $config->throw_exception = false;
 
         /** @psalm-suppress InternalMethod */
+        $this->project_analyzer->setPhpVersion('8.0', 'cli');
+
+        /** @psalm-suppress InternalMethod */
         $codebase = $this->project_analyzer->getCodebase();
         $attributeStatementProvider = new AttributeStatementProvider($codebase->statements_provider);
 
