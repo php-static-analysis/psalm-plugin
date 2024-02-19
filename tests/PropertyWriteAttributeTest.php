@@ -10,6 +10,18 @@ class PropertyWriteAttributeTest extends BaseAttributeTestCase
         $this->assertCount(0, $errors);
     }
 
+    public function testInterfacePropertyWriteAttribute(): void
+    {
+        $errors = $this->analyzeTestFile( '/data/PropertyWrite/InterfacePropertyWriteAttribute.php');
+        $this->assertCount(0, $errors);
+    }
+
+    public function testTraitPropertyWriteAttribute(): void
+    {
+        $errors = $this->analyzeTestFile( '/data/PropertyWrite/TraitPropertyWriteAttribute.php');
+        $this->assertCount(0, $errors);
+    }
+
     public function testInvalidClassPropertyWriteAttribute(): void
     {
         $errors = $this->analyzeTestFile('/data/PropertyWrite/InvalidClassPropertyWriteAttribute.php');

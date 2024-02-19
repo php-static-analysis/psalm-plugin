@@ -10,6 +10,18 @@ class PropertyReadAttributeTest extends BaseAttributeTestCase
         $this->assertCount(0, $errors);
     }
 
+    public function testInterfacePropertyReadAttribute(): void
+    {
+        $errors = $this->analyzeTestFile( '/data/PropertyRead/InterfacePropertyReadAttribute.php');
+        $this->assertCount(0, $errors);
+    }
+
+    public function testTraitPropertyReadAttribute(): void
+    {
+        $errors = $this->analyzeTestFile( '/data/PropertyRead/TraitPropertyReadAttribute.php');
+        $this->assertCount(0, $errors);
+    }
+
     public function testInvalidClassPropertyReadAttribute(): void
     {
         $errors = $this->analyzeTestFile('/data/PropertyRead/InvalidClassPropertyReadAttribute.php');

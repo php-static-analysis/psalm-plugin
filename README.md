@@ -106,4 +106,5 @@ These are the available attributes and their corresponding PHPDoc annotations:
 | [PropertyWrite](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyWrite.md) | `@property-write`  |
 | [Returns](https://github.com/php-static-analysis/attributes/blob/main/doc/Returns.md)             | `@return`          |
 | [Template](https://github.com/php-static-analysis/attributes/blob/main/doc/Template.md)           | `@template`        |
+| [TemplateCovariant](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateCovariant.md)         | `@template-covariant`     |
 | [Type](https://github.com/php-static-analysis/attributes/blob/main/doc/Type.md)                   | `@var` `@return`   |
