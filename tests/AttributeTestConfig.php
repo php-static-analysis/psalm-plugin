@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
+use Psalm\Codebase;
+use Psalm\Progress\Progress;
 use Psalm\Tests\TestConfig;
 
 class AttributeTestConfig extends TestConfig
@@ -15,5 +17,9 @@ class AttributeTestConfig extends TestConfig
                   throwExceptionOnError="false"
                 >
                 </psalm>';
+    }
+
+    public function visitStubFiles(Codebase $codebase, ?Progress $progress = null): void
+    {
     }
 }
