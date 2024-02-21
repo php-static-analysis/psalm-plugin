@@ -16,7 +16,7 @@ class ClassTemplateCovariantAttributeChild extends ClassTemplateCovariantAttribu
     public function getName() : string { return "child"; }
 }
 
-#[TemplateCovariant('T')]
+#[TemplateCovariant('T')] // can only be used in covariant position
 class Collection {
     #[Type('array<int, T>')]
     public array $list = [];
