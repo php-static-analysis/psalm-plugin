@@ -105,6 +105,7 @@ These are the available attributes and their corresponding PHPDoc annotations:
 | [Method](https://github.com/php-static-analysis/attributes/blob/main/doc/Method.md)                               | `@method`                 |
 | [Mixin](https://github.com/php-static-analysis/attributes/blob/main/doc/Mixin.md)                                 | `@mixin`                  |
 | [Param](https://github.com/php-static-analysis/attributes/blob/main/doc/Param.md)                 | `@param`           |
+| [ParamOut](https://github.com/php-static-analysis/attributes/blob/main/doc/ParamOut.md)                           | `@param-out`                         |
 | [Property](https://github.com/php-static-analysis/attributes/blob/main/doc/Property.md)           | `@property` `@var` |
 | [PropertyRead](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyRead.md)   | `@property-read`   |
 | [PropertyWrite](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyWrite.md) | `@property-write`  |
