@@ -110,6 +110,7 @@ These are the available attributes and their corresponding PHPDoc annotations:
 | [PropertyRead](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyRead.md)   | `@property-read`   |
 | [PropertyWrite](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyWrite.md) | `@property-write`  |
 | [Returns](https://github.com/php-static-analysis/attributes/blob/main/doc/Returns.md)             | `@return`          |
+| [SelfOut](https://github.com/php-static-analysis/attributes/blob/main/doc/SelfOut.md)                             | `@self-out` `@this-out`               |
 | [Template](https://github.com/php-static-analysis/attributes/blob/main/doc/Template.md)           | `@template`        |
 | [TemplateCovariant](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateCovariant.md)         | `@template-covariant`     |
 | [TemplateExtends](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateExtends.md)             | `@extends` `@template-extends` |
