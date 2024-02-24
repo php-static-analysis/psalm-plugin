@@ -26,8 +26,8 @@
     "require": {
         "php": ">=8.0",
         "ext-simplexml": "*",
-        "php-static-analysis/attributes": "^0.1.13 || dev-main",
-        "php-static-analysis/node-visitor": "^0.1.13 || dev-main",
+        "php-static-analysis/attributes": "^0.1.14 || dev-main",
+        "php-static-analysis/node-visitor": "^0.1.14 || dev-main",
         "vimeo/psalm": "^5"
     },
     "require-dev": {
