@@ -4,7 +4,6 @@ namespace test\PhpStaticAnalysis\PsalmPlugin\data\Type;
 
 use PhpStaticAnalysis\Attributes\Type;
 
-#[Type('string')]
 class InvalidPropertyTypeAttribute
 {
     #[Type(0)]
@@ -19,4 +18,10 @@ class InvalidPropertyTypeAttribute
 
     #[Type('$a + $b')]
     public $andAnotherinvalidProperty = '';
+
+    public function getName(
+        #[Type('string')]
+        string $user
+    ): void {
+    }
 }

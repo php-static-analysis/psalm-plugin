@@ -99,8 +99,10 @@ These are the available attributes and their corresponding PHPDoc annotations:
 
 | Attribute                                                                                                       | PHPDoc Annotations |
 |-----------------------------------------------------------------------------------------------------------------|--------------------|
+| [DefineType](https://github.com/php-static-analysis/attributes/blob/main/doc/DefineType.md)                     | `@type`                              |
 | [Deprecated](https://github.com/php-static-analysis/attributes/blob/main/doc/Deprecated.md)                     | `@deprecated`                        |
 | [Immmutable](https://github.com/php-static-analysis/attributes/blob/main/doc/Immmutable.md)                     | `@immmutable`                        |
+| [ImportType](https://github.com/php-static-analysis/attributes/blob/main/doc/ImportType.md)                     | `@import-type`                       |
 | [Internal](https://github.com/php-static-analysis/attributes/blob/main/doc/Internal.md)                         | `@internal`                          |
 | [IsReadOnly](https://github.com/php-static-analysis/attributes/blob/main/doc/IsReadOnly.md)                     | `@readonly`                          |
 | [Method](https://github.com/php-static-analysis/attributes/blob/main/doc/Method.md)                             | `@method`                            |

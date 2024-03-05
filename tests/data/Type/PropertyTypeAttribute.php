@@ -5,6 +5,7 @@ namespace test\PhpStaticAnalysis\PsalmPlugin\data\Type;
 use Exception;
 use PhpStaticAnalysis\Attributes\Type;
 
+#[Type('StringArray string[]')]
 class PropertyTypeAttribute
 {
     #[Type('string')]
