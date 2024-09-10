@@ -1,7 +1,6 @@
 # PHP Static Analysis Attributes Psalm Plugin
 [![Continuous Integration](https://github.com/php-static-analysis/psalm-plugin/workflows/All%20Tests/badge.svg)](https://github.com/php-static-analysis/psalm-plugin/actions)
 [![Latest Stable Version](https://poser.pugx.org/php-static-analysis/psalm-plugin/v/stable)](https://packagist.org/packages/php-static-analysis/psalm-plugin)
-[![PHP Version Require](http://poser.pugx.org/php-static-analysis/psalm-plugin/require/php)](https://packagist.org/packages/php-static-analysis/psalm-plugin)
 [![License](https://poser.pugx.org/php-static-analysis/psalm-plugin/license)](https://github.com/php-static-analysis/psalm-plugin/blob/main/LICENSE)
 [![Total Downloads](https://poser.pugx.org/php-static-analysis/psalm-plugin/downloads)](https://packagist.org/packages/php-static-analysis/psalm-plugin/stats)
 
@@ -123,3 +122,7 @@ These are the available attributes and their corresponding PHPDoc annotations:
 | [TemplateImplements](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateImplements.md)     | `@implements` `@template-implements` |
 | [TemplateUse](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateUse.md)                   | `@use` `@template-use`               |
 | [Type](https://github.com/php-static-analysis/attributes/blob/main/doc/Type.md)                                 | `@var` `@return`                     |
+
+## Sponsor this project
+
+If you would like to support the development of this project, please consider [sponsoring me](https://github.com/sponsors/carlos-granados)
