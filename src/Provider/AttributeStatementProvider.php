@@ -12,6 +12,7 @@ use PhpStaticAnalysis\Attributes\Returns;
 use PhpStaticAnalysis\NodeVisitor\AttributeNodeVisitor;
 use Psalm\Internal\Provider\StatementsProvider;
 use Psalm\Progress\Progress;
+use Webmozart\Assert\Assert;
 
 class AttributeStatementProvider
 {
@@ -71,7 +72,7 @@ class AttributeStatementProvider
         $traverser->addVisitor($nodeVisitor);
 
         $ast = $traverser->traverse($ast);
-        /** @var Stmt[] $ast */
+        Assert::allIsInstanceOf($ast, Stmt::class);
         return $ast;
     }
 }

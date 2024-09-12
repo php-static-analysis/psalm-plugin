@@ -96,32 +96,35 @@ This extension works by interacting with the parser that Psalm uses to parse the
 
 These are the available attributes and their corresponding PHPDoc annotations:
 
-| Attribute                                                                                                       | PHPDoc Annotations |
-|-----------------------------------------------------------------------------------------------------------------|--------------------|
-| [DefineType](https://github.com/php-static-analysis/attributes/blob/main/doc/DefineType.md)                     | `@type`                              |
-| [Deprecated](https://github.com/php-static-analysis/attributes/blob/main/doc/Deprecated.md)                     | `@deprecated`                        |
-| [Immmutable](https://github.com/php-static-analysis/attributes/blob/main/doc/Immmutable.md)                     | `@immmutable`                        |
-| [ImportType](https://github.com/php-static-analysis/attributes/blob/main/doc/ImportType.md)                     | `@import-type`                       |
-| [Internal](https://github.com/php-static-analysis/attributes/blob/main/doc/Internal.md)                         | `@internal`                          |
-| [IsReadOnly](https://github.com/php-static-analysis/attributes/blob/main/doc/IsReadOnly.md)                     | `@readonly`                          |
-| [Method](https://github.com/php-static-analysis/attributes/blob/main/doc/Method.md)                             | `@method`                            |
-| [Mixin](https://github.com/php-static-analysis/attributes/blob/main/doc/Mixin.md)                               | `@mixin`                             |
-| [Param](https://github.com/php-static-analysis/attributes/blob/main/doc/Param.md)                               | `@param`                             |
-| [ParamOut](https://github.com/php-static-analysis/attributes/blob/main/doc/ParamOut.md)                         | `@param-out`                         |
-| [Property](https://github.com/php-static-analysis/attributes/blob/main/doc/Property.md)                         | `@property` `@var`                   |
-| [PropertyRead](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyRead.md)                 | `@property-read`                     |
-| [PropertyWrite](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyWrite.md)               | `@property-write`                    |
-| [Pure](https://github.com/php-static-analysis/attributes/blob/main/doc/Pure.md)                                 | `@pure`                              |
-| [RequireExtends](https://github.com/php-static-analysis/attributes/blob/main/doc/RequireExtends.md)             | `@require-extends`                   |
-| [RequireImplements](https://github.com/php-static-analysis/attributes/blob/main/doc/RequireImplements.md)       | `@require-implements`                |
-| [Returns](https://github.com/php-static-analysis/attributes/blob/main/doc/Returns.md)                           | `@return`                            |
-| [SelfOut](https://github.com/php-static-analysis/attributes/blob/main/doc/SelfOut.md)                           | `@self-out` `@this-out`              |
-| [Template](https://github.com/php-static-analysis/attributes/blob/main/doc/Template.md)                         | `@template`                          |
-| [TemplateCovariant](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateCovariant.md)       | `@template-covariant`                |
-| [TemplateExtends](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateExtends.md)           | `@extends` `@template-extends`       |
-| [TemplateImplements](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateImplements.md)     | `@implements` `@template-implements` |
-| [TemplateUse](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateUse.md)                   | `@use` `@template-use`               |
-| [Type](https://github.com/php-static-analysis/attributes/blob/main/doc/Type.md)                                 | `@var` `@return`                     |
+| Attribute                                                                                                   | PHPDoc Annotations                   |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| [Assert](https://github.com/php-static-analysis/attributes/blob/main/doc/Assert.md)                         | `@assert`                            |
+| [AssertIfFalse](https://github.com/php-static-analysis/attributes/blob/main/doc/AssertIfFalse.md)           | `@assert-if-false`                   |
+| [AssertIfTrue](https://github.com/php-static-analysis/attributes/blob/main/doc/AssertIfTrue.md)             | `@assert-if-true`                    |
+| [DefineType](https://github.com/php-static-analysis/attributes/blob/main/doc/DefineType.md)                 | `@type`                              |
+| [Deprecated](https://github.com/php-static-analysis/attributes/blob/main/doc/Deprecated.md)                 | `@deprecated`                        |
+| [Immmutable](https://github.com/php-static-analysis/attributes/blob/main/doc/Immmutable.md)                 | `@immmutable`                        |
+| [ImportType](https://github.com/php-static-analysis/attributes/blob/main/doc/ImportType.md)                 | `@import-type`                       |
+| [Internal](https://github.com/php-static-analysis/attributes/blob/main/doc/Internal.md)                     | `@internal`                          |
+| [IsReadOnly](https://github.com/php-static-analysis/attributes/blob/main/doc/IsReadOnly.md)                 | `@readonly`                          |
+| [Method](https://github.com/php-static-analysis/attributes/blob/main/doc/Method.md)                         | `@method`                            |
+| [Mixin](https://github.com/php-static-analysis/attributes/blob/main/doc/Mixin.md)                           | `@mixin`                             |
+| [Param](https://github.com/php-static-analysis/attributes/blob/main/doc/Param.md)                           | `@param`                             |
+| [ParamOut](https://github.com/php-static-analysis/attributes/blob/main/doc/ParamOut.md)                     | `@param-out`                         |
+| [Property](https://github.com/php-static-analysis/attributes/blob/main/doc/Property.md)                     | `@property` `@var`                   |
+| [PropertyRead](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyRead.md)             | `@property-read`                     |
+| [PropertyWrite](https://github.com/php-static-analysis/attributes/blob/main/doc/PropertyWrite.md)           | `@property-write`                    |
+| [Pure](https://github.com/php-static-analysis/attributes/blob/main/doc/Pure.md)                             | `@pure`                              |
+| [RequireExtends](https://github.com/php-static-analysis/attributes/blob/main/doc/RequireExtends.md)         | `@require-extends`                   |
+| [RequireImplements](https://github.com/php-static-analysis/attributes/blob/main/doc/RequireImplements.md)   | `@require-implements`                |
+| [Returns](https://github.com/php-static-analysis/attributes/blob/main/doc/Returns.md)                       | `@return`                            |
+| [SelfOut](https://github.com/php-static-analysis/attributes/blob/main/doc/SelfOut.md)                       | `@self-out` `@this-out`              |
+| [Template](https://github.com/php-static-analysis/attributes/blob/main/doc/Template.md)                     | `@template`                          |
+| [TemplateCovariant](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateCovariant.md)   | `@template-covariant`                |
+| [TemplateExtends](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateExtends.md)       | `@extends` `@template-extends`       |
+| [TemplateImplements](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateImplements.md) | `@implements` `@template-implements` |
+| [TemplateUse](https://github.com/php-static-analysis/attributes/blob/main/doc/TemplateUse.md)               | `@use` `@template-use`               |
+| [Type](https://github.com/php-static-analysis/attributes/blob/main/doc/Type.md)                             | `@var` `@return`                     |
 
 ## Sponsor this project
 

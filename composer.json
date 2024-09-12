@@ -26,9 +26,10 @@
     "require": {
         "php": ">=8.0",
         "ext-simplexml": "*",
-        "php-static-analysis/attributes": "^0.3.0 || dev-main",
-        "php-static-analysis/node-visitor": "^0.3.0 || dev-main",
-        "vimeo/psalm": "^5"
+        "php-static-analysis/attributes": "^0.3.1 || dev-main",
+        "php-static-analysis/node-visitor": "^0.3.1 || dev-main",
+        "vimeo/psalm": "^5",
+        "webmozart/assert": "^1.11"
     },
     "require-dev": {
         "php-static-analysis/phpstan-extension": "dev-main",
