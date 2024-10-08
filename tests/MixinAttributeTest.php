@@ -28,7 +28,6 @@ class MixinAttributeTest extends BaseAttributeTestCase
 
         $expectedErrors = [
             '@mixin annotation used without specifying class in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Mixin\InvalidClassMixinAttribute' => 9,
-            'Argument 1 of PhpStaticAnalysis\Attributes\Mixin::__construct expects string, but 0 provided' => 7,
             'Attribute Mixin cannot be used on a method' => 11,
         ];
 

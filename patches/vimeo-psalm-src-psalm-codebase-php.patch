@@ -1,0 +1,14 @@
+--- /dev/null
++++ ../src/Psalm/Codebase.php
+@@ -131,7 +131,10 @@
+ 
+     public FileReferenceProvider $file_reference_provider;
+ 
+-    public StatementsProvider $statements_provider;
++    /**
++     * @var StatementsProvider
++     */
++    public $statements_provider;
+ 
+     private readonly Progress $progress;
+ 

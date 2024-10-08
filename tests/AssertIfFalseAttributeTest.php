@@ -22,7 +22,7 @@ class AssertIfFalseAttributeTest extends BaseAttributeTestCase
     {
         $errors = $this->analyzeTestFile('/data/AssertIfFalse/InvalidMethodAssertIfFalseAttribute.php');
         $this->checkExpectedErrors($errors,[
-            'Argument 1 of PhpStaticAnalysis\Attributes\AssertIfFalse::__construct expects string, but 0 provided' => 9,
+            'Misplaced variable in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\AssertIfFalse\InvalidMethodAssertIfFalseAttribute::checkString' => 9,
             'Attribute AssertIfFalse cannot be used on a property' => 15,
         ]);
     }

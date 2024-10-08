@@ -32,7 +32,6 @@ class ImmutableAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile( '/data/Immutable/InvalidClassImmutableAttribute.php');
 
         $expectedErrors = [
-            'Attribute Immutable is not repeatable' => 10,
             'Attribute Immutable cannot be used on a property' => 13,
         ];
 

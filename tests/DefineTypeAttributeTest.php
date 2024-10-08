@@ -28,7 +28,6 @@ class DefineTypeAttributeTest extends BaseAttributeTestCase
 
         $expectedErrors = [
             'Misplaced brackets' => 7,
-            'Argument 1 of PhpStaticAnalysis\Attributes\DefineType::__construct expects string, but 0 provided' => 7,
             'Attribute DefineType cannot be used on a method' => 12,
         ];
 

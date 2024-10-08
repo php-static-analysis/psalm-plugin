@@ -28,7 +28,6 @@ class MethodAttributeTest extends BaseAttributeTestCase
 
         $expectedErrors = [
             'No @method entry specified in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Method\InvalidClassMethodAttribute' => 9,
-            'Argument 1 of PhpStaticAnalysis\Attributes\Method::__construct expects string, but 0 provided' => 8,
             'Attribute Method cannot be used on a method' => 11,
             'string is not a valid method in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Method\AnotherInvalidClassMethodAttribute' => 29,
         ];

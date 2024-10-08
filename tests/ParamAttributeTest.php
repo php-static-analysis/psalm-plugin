@@ -24,7 +24,6 @@ class ParamAttributeTest extends BaseAttributeTestCase
         $this->checkExpectedErrors($errors,[
             'Badly-formatted @param in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Param\InvalidMethodParamAttribute::getNameLength' => 9,
             'Badly-formatted @param in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Param\InvalidMethodParamAttribute::getOtherNameLength' => 15,
-            'Argument 1 of PhpStaticAnalysis\Attributes\Param::__construct expects string, but 0 provided' => 9,
             'Misplaced brackets in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Param\InvalidMethodParamAttribute::getAnotherNameLength' => 22,
             'Found duplicated @param or prefixed @param tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Param\InvalidMethodParamAttribute::countEvenMoreNames' => 30,
             'Argument 1 of count cannot be mixed, expecting Countable|array<array-key, mixed>' => 33,

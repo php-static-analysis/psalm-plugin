@@ -54,7 +54,6 @@ class DeprecatedAttributeTest extends BaseAttributeTestCase
 
         $expectedErrors = [
             'Attribute Deprecated cannot be used on a function/method parameter' => 12,
-            'Attribute Deprecated is not repeatable' => 19,
         ];
 
         $this->checkExpectedErrors($errors, $expectedErrors);

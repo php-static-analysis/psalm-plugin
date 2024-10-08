@@ -23,7 +23,6 @@ class ParamOutAttributeTest extends BaseAttributeTestCase
         $expectedErrors = [
             'Badly-formatted @param in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\ParamOut\InvalidMethodParamOutAttribute::setName' => 9,
             'Badly-formatted @param in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\ParamOut\InvalidMethodParamOutAttribute::setOtherName' => 15,
-            'Argument 1 of PhpStaticAnalysis\Attributes\ParamOut::__construct expects string, but 0 provided' => 9,
             'Misplaced brackets in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\ParamOut\InvalidMethodParamOutAttribute::setAnotherName' => 21,
             'Attribute ParamOut cannot be used on a property' => 27,
         ];

@@ -74,7 +74,7 @@ class BaseAttributeTestCase extends TestCase
 
         $errorNum = 0;
         foreach ($expectedErrors as $error => $line) {
-            /** @psalm-suppress InternalProperty */
+            /** @psalm-suppress InternalProperty, UndefinedPropertyFetch */
             $this->assertSame($error, $errors[$errorNum]->message);
             /** @psalm-suppress InternalProperty */
             $this->assertSame($line, $errors[$errorNum]->line_from);

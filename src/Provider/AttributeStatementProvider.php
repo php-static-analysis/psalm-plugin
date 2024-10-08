@@ -38,7 +38,7 @@ class AttributeStatementProvider
         return $this->traverseAst($ast);
     }
 
-    #[Param(args: 'mixed[]')]
+    #[Param(args: 'array<int|string, mixed>')]
     public function __call(string $method, array $args): mixed
     {
         $callable = [$this->statementsProvider, $method];

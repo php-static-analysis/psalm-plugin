@@ -10,6 +10,10 @@ However, static analysis tools like Psalm have not made this transition to attri
 
 This is a Psalm plugin that allows Psalm to understand a new set of attributes that replace the PHPDoc annotations. These attributes are defined in [this repository](https://github.com/php-static-analysis/attributes)
 
+NOTE: Version 0.4.0 of this plugin requires Php Parser v5. The current available version of Psalm (v5) does not support this
+version of the parser, so currently this library only supports the `dev-master` version of Psalm. If you need to
+use Psalm 5, you will need to use version 0.3 of this plugin.
+
 ## Example
 
 In order to show how code would look with these attributes, we can look at the following example. This is how a class looks like with the current annotations:
@@ -73,6 +77,12 @@ To use this plugin, require it in Composer:
 ```
 composer require --dev php-static-analysis/psalm-plugin
 ```
+
+NOTE: When adding this dependency, composer will ask you 
+if you want to allow this dependency as a composer plugin.
+This is needed so that this plugin can patch Psalm in order
+to enable its functionality. This will add an entry in your
+`allow-plugins` composer config entry.
 
 Then run this command to enable the plugin:
 

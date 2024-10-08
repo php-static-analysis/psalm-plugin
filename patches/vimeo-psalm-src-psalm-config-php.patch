@@ -1,0 +1,11 @@
+--- /dev/null
++++ ../src/Psalm/Config.php
+@@ -130,7 +130,7 @@
+  * @psalm-suppress PropertyNotSetInConstructor
+  * @psalm-consistent-constructor
+  */
+-final class Config
++class Config
+ {
+     final public const DEFAULT_BASELINE_NAME = 'psalm-baseline.xml';
+     private const DEFAULT_FILE_NAMES = [

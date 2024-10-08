@@ -15,7 +15,6 @@ class SelfOutAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/SelfOut/InvalidMethodSelfOutAttribute.php');
 
         $expectedErrors = [
-            'Attribute SelfOut is not repeatable' => 15,
             'Attribute SelfOut cannot be used on a property' => 20,
         ];
 

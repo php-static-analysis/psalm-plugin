@@ -29,7 +29,6 @@ class ImportTypeAttributeTest extends BaseAttributeTestCase
         $expectedErrors = [
             'Invalid import in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\ImportType\InvalidClassImportTypeAttribute, expecting "<TypeName> from <ClassName>", got "" instead.' => 9,
             'Invalid import in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\ImportType\InvalidClassImportTypeAttribute, expecting "<TypeName> from <ClassName>", got "string" instead.' => 10,
-            'Argument 1 of PhpStaticAnalysis\Attributes\ImportType::__construct expects string, but 0 provided' => 8,
             'Attribute ImportType cannot be used on a method' => 13,
             'Docblock-defined class, interface or enum named test\PhpStaticAnalysis\PsalmPlugin\data\ImportType\count($a) does not exist' => 11,
         ];

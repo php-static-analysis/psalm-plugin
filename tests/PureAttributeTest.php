@@ -21,7 +21,6 @@ class PureAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/Pure/InvalidMethodPureAttribute.php');
 
         $expectedErrors = [
-            'Attribute Pure is not repeatable' => 15,
             'Attribute Pure cannot be used on a property' => 11,
         ];
 

@@ -49,9 +49,7 @@ class InternalAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/Internal/InvalidMethodInternalAttribute.php');
         $expectedErrors = [
             'psalm-internal annotation used without specifying namespace in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Internal\InvalidMethodInternalAttribute::getName' => 9,
-            'Argument 1 of PhpStaticAnalysis\Attributes\Internal::__construct expects null|string, but 0 provided' => 9,
             'Attribute Internal cannot be used on a function/method parameter' => 15,
-            'Attribute Internal is not repeatable' => 22,
         ];
 
         $this->checkExpectedErrors($errors, $expectedErrors);

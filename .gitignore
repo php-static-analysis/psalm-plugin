@@ -3,3 +3,5 @@ composer.lock
 .phpunit.result.cache
 .idea
 cache
+.codebase_patch_applied
+.config_patch_applied

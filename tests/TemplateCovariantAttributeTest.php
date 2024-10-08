@@ -29,8 +29,6 @@ class TemplateCovariantAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/TemplateCovariant/InvalidClassTemplateCovariantAttribute.php');
         $this->checkExpectedErrors($errors,[
             'Empty @template-covariant tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\TemplateCovariant\InvalidClassTemplateCovariantAttribute' => 10,
-            'Argument 1 of PhpStaticAnalysis\Attributes\TemplateCovariant::__construct expects string, but 0 provided' => 7,
-            'Argument 2 of PhpStaticAnalysis\Attributes\TemplateCovariant::__construct expects null|string, but 0 provided' => 9,
             'Attribute TemplateCovariant cannot be used on a property' => 12,
         ]);
     }

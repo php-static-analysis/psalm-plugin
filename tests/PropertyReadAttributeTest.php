@@ -28,7 +28,6 @@ class PropertyReadAttributeTest extends BaseAttributeTestCase
 
         $expectedErrors = [
             'Badly-formatted @property in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\InvalidClassPropertyReadAttribute' => 9,
-            'Argument 1 of PhpStaticAnalysis\Attributes\PropertyRead::__construct expects string, but 0 provided' => 7,
             'Attribute PropertyRead cannot be used on a method' => 11,
             'Badly-formatted @property in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\AnotherInvalidClassPropertyReadAttribute' => 29,
             'Misplaced brackets in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\AndAnotherInvalidClassPropertyReadAttribute' => 34,

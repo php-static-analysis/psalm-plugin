@@ -41,9 +41,7 @@ class TemplateAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/Template/InvalidMethodTemplateAttribute.php');
         $this->checkExpectedErrors($errors,[
             'Empty @template tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Template\InvalidMethodTemplateAttribute::getName' => 11,
-            'Argument 1 of PhpStaticAnalysis\Attributes\Template::__construct expects string, but 0 provided' => 11,
             'Empty @template tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Template\InvalidMethodTemplateAttribute::getAnotherName' => 17,
-            'Argument 2 of PhpStaticAnalysis\Attributes\Template::__construct expects null|string, but 0 provided' => 26,
             'Attribute Template cannot be used on a property' => 23,
         ]);
     }
