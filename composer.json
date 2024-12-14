@@ -28,7 +28,7 @@
         "ext-simplexml": "*",
         "php-static-analysis/attributes": "^0.3.2 || dev-main",
         "php-static-analysis/node-visitor": "^0.3.2 || dev-main",
-        "vimeo/psalm": "^5",
+        "vimeo/psalm": "^5 || dev-master",
         "webmozart/assert": "^1.11"
     },
     "require-dev": {
