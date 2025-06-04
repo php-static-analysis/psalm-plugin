@@ -15,6 +15,7 @@ final class SelfOutAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/SelfOut/InvalidMethodSelfOutAttribute.php');
 
         $expectedErrors = [
+            'Too many arguments for PhpStaticAnalysis\Attributes\SelfOut::__construct - expecting 0 but saw 1' => 20,
             'Attribute SelfOut cannot be used on a property' => 20,
         ];
 

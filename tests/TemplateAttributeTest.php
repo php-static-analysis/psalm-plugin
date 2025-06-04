@@ -42,6 +42,7 @@ final class TemplateAttributeTest extends BaseAttributeTestCase
         $this->checkExpectedErrors($errors,[
             'Empty @template tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Template\InvalidMethodTemplateAttribute::getName' => 11,
             'Empty @template tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Template\InvalidMethodTemplateAttribute::getAnotherName' => 17,
+            'Too many arguments for PhpStaticAnalysis\Attributes\Template::__construct - expecting 0 but saw 1' => 23,
             'Attribute Template cannot be used on a property' => 23,
         ]);
     }

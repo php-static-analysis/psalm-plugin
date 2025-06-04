@@ -25,6 +25,7 @@ final class ReturnsAttributeTest extends BaseAttributeTestCase
             'Found duplicated @return or prefixed @return tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Returns\InvalidMethodReturnsAttribute::getOtherName' => 15,
             'Found duplicated @return or prefixed @return tag in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Returns\InvalidMethodReturnsAttribute::getSomeMoreNames' => 31,
             'Misplaced variable in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Returns\InvalidMethodReturnsAttribute::getMoreAndMoreNames' => 37,
+            'Too many arguments for PhpStaticAnalysis\Attributes\Returns::__construct - expecting 0 but saw 1' => 43,
             'Attribute Returns cannot be used on a property' => 43,
         ]);
     }

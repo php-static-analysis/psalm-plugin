@@ -17,6 +17,7 @@ final class TypeAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/Type/InvalidPropertyTypeAttribute.php');
         $this->checkExpectedErrors($errors,[
             'Misplaced variable' => 19,
+            'Too many arguments for PhpStaticAnalysis\Attributes\Type::__construct - expecting 0 but saw 1' => 23,
             'Attribute Type cannot be used on a function/method parameter' => 23,
             'Property test\PhpStaticAnalysis\PsalmPlugin\data\Type\InvalidPropertyTypeAttribute::$invalidProperty does not have a declared type - consider string' => 10,
             'Property test\PhpStaticAnalysis\PsalmPlugin\data\Type\InvalidPropertyTypeAttribute::$andAnotherinvalidProperty does not have a declared type - consider string' => 20,

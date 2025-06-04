@@ -20,6 +20,7 @@ final class RequireExtendsAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile( '/data/RequireExtends/InvalidTraitRequireExtendsAttribute.php');
 
         $expectedErrors = [
+            'Too many arguments for PhpStaticAnalysis\Attributes\RequireExtends::__construct - expecting 0 but saw 1' => 10,
             'Attribute RequireExtends cannot be used on a property' => 10,
         ];
 
