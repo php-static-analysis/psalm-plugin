@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class ImportTypeAttributeTest extends BaseAttributeTestCase
+final class ImportTypeAttributeTest extends BaseAttributeTestCase
 {
     public function testClassImportTypeAttribute(): void
     {

@@ -1,0 +1,13 @@
+diff --git a/tests/TestConfig.php b/tests/TestConfig.php
+index b5bac8fcc..970ac2b40 100644
+--- a/tests/TestConfig.php
++++ b/tests/TestConfig.php
+@@ -12,7 +12,7 @@ use SimpleXMLElement;
+ 
+ use function getcwd;
+ 
+-final class TestConfig extends Config
++class TestConfig extends Config
+ {
+     private static ?ProjectFileFilter $cached_project_files = null;
+ 

@@ -14,7 +14,7 @@ use Psalm\Internal\Provider\StatementsProvider;
 use Psalm\Progress\Progress;
 use Webmozart\Assert\Assert;
 
-class AttributeStatementProvider
+final class AttributeStatementProvider
 {
     private StatementsProvider $statementsProvider;
 
@@ -27,12 +27,14 @@ class AttributeStatementProvider
     public function getStatementsForFile(
         string $file_path,
         int $analysis_php_version_id,
+        bool $do_diff,
         ?Progress $progress = null
     ): array {
         /** @psalm-suppress InternalMethod */
         $ast = $this->statementsProvider->getStatementsForFile(
             $file_path,
             $analysis_php_version_id,
+            $do_diff,
             $progress
         );
         return $this->traverseAst($ast);

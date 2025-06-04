@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class IsReadOnlyAttributeTest extends BaseAttributeTestCase
+final class IsReadOnlyAttributeTest extends BaseAttributeTestCase
 {
     public function testPropertyIsReadOnlyAttribute(): void
     {

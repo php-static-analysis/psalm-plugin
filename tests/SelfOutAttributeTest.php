@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class SelfOutAttributeTest extends BaseAttributeTestCase
+final class SelfOutAttributeTest extends BaseAttributeTestCase
 {
     public function testMethodSelfOutAttribute(): void
     {

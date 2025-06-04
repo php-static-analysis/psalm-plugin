@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class PropertyWriteAttributeTest extends BaseAttributeTestCase
+final class PropertyWriteAttributeTest extends BaseAttributeTestCase
 {
     public function testClassPropertyWriteAttribute(): void
     {
@@ -27,6 +27,7 @@ class PropertyWriteAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/PropertyWrite/InvalidClassPropertyWriteAttribute.php');
 
         $expectedErrors = [
+            'Magic instance property test\PhpStaticAnalysis\PsalmPlugin\data\PropertyWrite\InvalidClassPropertyWriteAttribute::$name is not defined' => 39,
             'Unable to determine the type that $foo is being assigned to' => 39,
             'Badly-formatted @property in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyWrite\InvalidClassPropertyWriteAttribute' => 9,
             'Attribute PropertyWrite cannot be used on a method' => 11,

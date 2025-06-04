@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class TemplateExtendsAttributeTest extends BaseAttributeTestCase
+final class TemplateExtendsAttributeTest extends BaseAttributeTestCase
 {
     public function testClassTemplateExtendsAttribute(): void
     {

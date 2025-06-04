@@ -8,7 +8,7 @@ use Psalm\Codebase;
 use Psalm\Progress\Progress;
 use Psalm\Tests\TestConfig;
 
-class AttributeTestConfig extends TestConfig
+final class AttributeTestConfig extends TestConfig
 {
     protected function getContents(): string
     {

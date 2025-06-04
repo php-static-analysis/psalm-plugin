@@ -3,7 +3,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class RequireExtendsAttributeTest extends BaseAttributeTestCase
+final class RequireExtendsAttributeTest extends BaseAttributeTestCase
 {
     public function testClassRequireExtendsAttribute(): void
     {

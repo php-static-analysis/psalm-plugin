@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class TemplateCovariantAttributeTest extends BaseAttributeTestCase
+final class TemplateCovariantAttributeTest extends BaseAttributeTestCase
 {
     public function testClassTemplateCovariantAttribute(): void
     {
