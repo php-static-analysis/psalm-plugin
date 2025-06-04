@@ -1,0 +1,13 @@
+diff --git a/src/Psalm/Internal/Provider/ParserCacheProvider.php b/src/Psalm/Internal/Provider/ParserCacheProvider.php
+index f352519f2..c2351841e 100644
+--- a/src/Psalm/Internal/Provider/ParserCacheProvider.php
++++ b/src/Psalm/Internal/Provider/ParserCacheProvider.php
+@@ -13,7 +13,7 @@ use function filemtime;
+ use const DIRECTORY_SEPARATOR;
+ 
+ /** @internal */
+-final class ParserCacheProvider
++class ParserCacheProvider
+ {
+     private const PARSER_CACHE_DIRECTORY = 'php-parser';
+ 

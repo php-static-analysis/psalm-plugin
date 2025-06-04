@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class MethodAttributeTest extends BaseAttributeTestCase
+final class MethodAttributeTest extends BaseAttributeTestCase
 {
     public function testClassMethodAttribute(): void
     {
@@ -27,6 +27,7 @@ class MethodAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile( '/data/Method/InvalidClassMethodAttribute.php');
 
         $expectedErrors = [
+            'Magic method test\PhpStaticAnalysis\PsalmPlugin\data\Method\InvalidClassMethodAttribute::badfunction does not exist' => 34,
             'No @method entry specified in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Method\InvalidClassMethodAttribute' => 9,
             'Attribute Method cannot be used on a method' => 11,
             'string is not a valid method in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\Method\AnotherInvalidClassMethodAttribute' => 29,

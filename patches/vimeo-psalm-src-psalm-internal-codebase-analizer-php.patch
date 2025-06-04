@@ -1,0 +1,16 @@
+diff --git a/src/Psalm/Internal/Codebase/Analyzer.php b/src/Psalm/Internal/Codebase/Analyzer.php
+index f9127a517..41f94a174 100644
+--- a/src/Psalm/Internal/Codebase/Analyzer.php
++++ b/src/Psalm/Internal/Codebase/Analyzer.php
+@@ -812,7 +812,10 @@ final class Analyzer
+         );
+     }
+ 
+-    public function shiftFileOffsets(StatementsProvider $statements_provider): void
++    /**
++     * @param StatementsProvider $statements_provider
++     */
++    public function shiftFileOffsets($statements_provider): void
+     {
+         $diff_map = $statements_provider->getDiffMap();
+         $deletion_ranges = $statements_provider->getDeletionRanges();

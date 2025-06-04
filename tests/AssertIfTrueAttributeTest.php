@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class AssertIfTrueAttributeTest extends BaseAttributeTestCase
+final class AssertIfTrueAttributeTest extends BaseAttributeTestCase
 {
     public function testFunctionAssertIfTrueAttribute(): void
     {

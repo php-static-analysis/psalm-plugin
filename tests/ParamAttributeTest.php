@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class ParamAttributeTest extends BaseAttributeTestCase
+final class ParamAttributeTest extends BaseAttributeTestCase
 {
     public function testFunctionParamAttribute(): void
     {

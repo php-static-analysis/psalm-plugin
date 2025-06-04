@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class PropertyReadAttributeTest extends BaseAttributeTestCase
+final class PropertyReadAttributeTest extends BaseAttributeTestCase
 {
     public function testClassPropertyReadAttribute(): void
     {
@@ -27,6 +27,7 @@ class PropertyReadAttributeTest extends BaseAttributeTestCase
         $errors = $this->analyzeTestFile('/data/PropertyRead/InvalidClassPropertyReadAttribute.php');
 
         $expectedErrors = [
+            'Magic instance property test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\InvalidClassPropertyReadAttribute::$name is not defined' => 39,
             'Badly-formatted @property in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\InvalidClassPropertyReadAttribute' => 9,
             'Attribute PropertyRead cannot be used on a method' => 11,
             'Badly-formatted @property in docblock for test\PhpStaticAnalysis\PsalmPlugin\data\PropertyRead\AnotherInvalidClassPropertyReadAttribute' => 29,

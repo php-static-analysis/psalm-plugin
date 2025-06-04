@@ -9,7 +9,7 @@ use Composer\Plugin\PluginInterface;
 use Composer\Script\Event;
 use PhpStaticAnalysis\Attributes\Returns;
 
-class Plugin implements PluginInterface, EventSubscriberInterface
+final class Plugin implements PluginInterface, EventSubscriberInterface
 {
     public function activate(Composer $composer, IOInterface $io)
     {
@@ -50,12 +50,25 @@ class Plugin implements PluginInterface, EventSubscriberInterface
         $vendorDir = $event->getComposer()->getConfig()->get('vendor-dir');
 
         $dependencyPath = $vendorDir . '/vimeo/psalm';
-        $patchFile = __DIR__ . '/../../patches/vimeo-psalm-src-psalm-config-php.patch';
+        $patchesDir = __DIR__ . '/../../patches/';
+        $patchFiles = glob($patchesDir . '*.patch');
 
-        exec("patch -p1 -d $dependencyPath --forward < $patchFile");
+        if ($patchFiles === false) {
+            echo "No patches to apply\n";
+            return;
+        }
+        foreach ($patchFiles as $patchFile) {
+            $escapedPatchFile = escapeshellarg($patchFile);
+            $escapedDependencyPath = escapeshellarg($dependencyPath);
 
-        $patchFile = __DIR__ . '/../../patches/vimeo-psalm-src-psalm-codebase-php.patch';
+            $cmd = "patch -p1 -d $escapedDependencyPath --forward < $escapedPatchFile";
+            exec($cmd, $output, $returnVar);
 
-        exec("patch -p1 -d $dependencyPath --forward < $patchFile");
+            if ($returnVar !== 0) {
+                echo "Failed to apply patch: $patchFile\n";
+            } else {
+                echo "Applied patch: $patchFile\n";
+            }
+        }
     }
 }

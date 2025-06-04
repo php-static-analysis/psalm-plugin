@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class TypeAttributeTest extends BaseAttributeTestCase
+final class TypeAttributeTest extends BaseAttributeTestCase
 {
     public function testPropertyTypeAttribute(): void
     {

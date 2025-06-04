@@ -2,7 +2,7 @@
 
 namespace test\PhpStaticAnalysis\PsalmPlugin;
 
-class RequireImplementsAttributeTest extends BaseAttributeTestCase
+final class RequireImplementsAttributeTest extends BaseAttributeTestCase
 {
     public function testClassRequireImplementsAttribute(): void
     {
